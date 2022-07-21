@@ -1,0 +1,43 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Full path
+[directory]
+truncation_length = 0
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]
+format = """[ ❯_](bold green) """
+
+
+[username]
+format = " [$user]($style) "
+
+
+[aws]
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[haskell]
+format = '\[[$symbol($version)]($style)\]'
+
+[lua]
+format = '\[[$symbol($version)]($style)\]'
+
+[nodejs]
+format = '\[[$symbol($version)]($style)\]'
+
+[python]
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[rust]
+format = '\[[$symbol($version)]($style)\]'
+
