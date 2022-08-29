@@ -2,18 +2,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
-add_newline = false
+add_newline = true
+
+format = """
+[╭─](white)$username in $directory$git_branch$git_status$nodejs$kubernetes$cmd_duration
+[╰─](white)$character """
 
 # Full path
 [directory]
 truncation_length = 0
-
-# Replace the "❯" symbol in the prompt with "➜"
-[character]
-format = """
-[┌───────────────────](bold green)
-[│](bold green)$directory$rust$package
-[└─❯](bold green) """
 
 [username]
 format = " [$user]($style) "
@@ -43,4 +40,5 @@ format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
 format = '\[[$symbol($version)]($style)\]'
 
 [kubernetes]
-format = '\[[ﴱ $context\($namespace\)](bold purple) ($style)\]'
+format = '\[[⛵ on ($cluster)](green) \]'
+disabled = false
