@@ -13,7 +13,7 @@ format = """
 truncation_length = 0
 
 [username]
-format = " [$user]($style) "
+format = " [$user]($style)"
 
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
