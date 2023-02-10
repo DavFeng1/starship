@@ -5,7 +5,7 @@
 add_newline = true
 
 format = """
-[╭─](bold green)$username in $directory$git_branch$git_status$nodejs$python$rust$kubernetes$cmd_duration
+[╭─](bold green)$username in $directory$git_branch$git_status$nodejs$kubernetes$aws$time$cmd_duration
 [╰─](bold green)$character """
 
 # Full path
@@ -41,4 +41,8 @@ format = '\[[$symbol($version)]($style)\]'
 
 [kubernetes]
 format = '\[[⛵ on ($cluster)](green) \]'
-disabled = false
+
+[time]
+disabled  = false
+format = ' --[ $time ]($style)'
+
