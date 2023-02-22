@@ -5,7 +5,7 @@
 add_newline = true
 
 format = """
-[╭─](bold green)$username in $directory$git_branch$git_status$nodejs$ruby$kubernetes$aws$time$cmd_duration
+[╭─](bold green)$username in $directory$git_branch$git_status$nodejs$rust$ruby$kubernetes$aws$time$cmd_duration
 [╰─](bold green)$character """
 
 # Full path
