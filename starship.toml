@@ -5,7 +5,7 @@
 add_newline = true
 
 format = """
-[╭─](bold green)$username in $directory$git_branch$git_status$nodejs$rust$kubernetes$aws$time$cmd_duration
+[╭─](bold green)$username in $directory$git_branch$git_status$nodejs$ruby$kubernetes$aws$time$cmd_duration
 [╰─](bold green)$character """
 
 # Full path
@@ -35,6 +35,10 @@ format = '\[[$symbol($version)]($style)\]'
 
 [python]
 format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[ruby]
+symbol = '🔺'
+format = '\[[$symbol($version)]($style)\]'
 
 [rust]
 format = '\[[$symbol($version)]($style)\]'
